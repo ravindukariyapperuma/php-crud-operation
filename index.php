@@ -11,6 +11,8 @@
     <title>PHP_CRUD</title>
   </head>
   <body>
+  <!-- <?= $_GET['id']; ?> -->
+  <!-- <?= $_GET['name']; ?> -->
     <div class="container mt-2 mb-4 p-2 shadow bg-white">
 		<form action="CRUDquery.php" method="POST">
 			<div class="form-row justify-content-center">

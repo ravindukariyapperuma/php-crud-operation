@@ -2,9 +2,9 @@
 
 $conn = new mysqli("localhost", "root", "", "crud") OR die("Error : ".mysqli_error($conn));
 
-//code to save user's data
-if(isset($_POST['save'])) {
-	if(!empty($_POST['username']) && !empty($_POST['password']) {
+
+	if((!empty($_POST['username'])) && (!empty($_POST['password']))) {
+		
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		
@@ -16,10 +16,13 @@ if(isset($_POST['save'])) {
 		}
 		$stmt->close();
 		$conn->close();
+		
 	}
 	else{
 		#alert msg
 	}
 	header("location: index.php")
-}
+
+
+
 ?>
