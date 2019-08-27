@@ -8,10 +8,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>PHP_CRUD</title>
   </head>
   <body>
-    
+    <div class="container mt-2 mb-4 p-2 shadow bg-white">
+		<form action="CRUDquery.php" method="POST">
+			<div class="form-row justify-content-center">
+				<div class="col-auto">
+					<input type="text" name="username" class="form-control" id="username" placeholder="User Name">
+				</div>
+				<div class="col-auto">
+					<input type="text" name="password" class="form-control" id="password" placeholder="Password">
+				</div>
+				<div class="col-auto">
+					<button type="submit" name="save" class="btn btn-info">Save</button>
+				</div>
+			</div>
+		</form>
+	</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
